@@ -1,0 +1,46 @@
+
+    .heart-button {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(252, 231, 235);
+        position: relative;
+        transform: rotate(-45deg);
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 20% auto;
+    }
+
+    .heart-button::before,
+    .heart-button::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(252, 231, 235);
+        border-radius: 50%;
+    }
+
+    .heart-button::before {
+        top: -45px;
+        left: 0;
+    }
+
+    .heart-button::after {
+        left: 45px;
+        top: 0;
+    }
+
+    .heart-button:hover {
+        background-color: rgb(245, 221, 224);
+    }
+
+    .heart-button:hover::before,
+    .heart-button:hover::after {
+        background-color: rgb(245, 221, 224);
+    }
+
+
+body{
+    text-align: center;
+}
